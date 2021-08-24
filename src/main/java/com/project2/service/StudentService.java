@@ -69,6 +69,8 @@ public class StudentService {
         existingStudent.setGrade(student.getGrade());
         //existingStudent.setCourse(student.getCourse());
         existingStudent.setPass(student.getPass());
+        existingStudent.setUrl(student.getUrl());
+        existingStudent.setUrlDate(student.getUrlDate());
 
         return repository.save(existingStudent);
     }

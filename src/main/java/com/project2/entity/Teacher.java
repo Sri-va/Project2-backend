@@ -1,6 +1,8 @@
 package com.project2.entity;
 
 
+import java.util.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -33,5 +35,6 @@ public class Teacher {
 	private String course;
 	private String pass;
 	private String url;
+	private Date urlDate;
 	
 }

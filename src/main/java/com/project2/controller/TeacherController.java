@@ -86,10 +86,12 @@ public class TeacherController {
     public String meetingUrlrequest(@RequestBody MeetingUrl meetingurl) {
     	Teacher teacher1 = findTeacherById(meetingurl.getTeachID());
     	teacher1.setUrl(meetingurl.getMeetingURL());
+    	teacher1.setUrlDate(meetingurl.getDate());
     	service.updateTeacher(teacher1);
     	List<Student> stud1 = stuser.getStudentsByCourse(teacher1.getCourse());
     	for(Student s:stud1) {
     		s.setUrl(meetingurl.getMeetingURL());
+    		s.setUrlDate(meetingurl.getDate());
     		stuser.updateStudent(s);
     	}
 		return null;

@@ -46,7 +46,7 @@ public class StudentController {
     public Student findStudentByEmail(@PathVariable String email) {
         return service.getStudentByEmail(email);
     }
-    @GetMapping("/allstudentByCourse/{Course}")
+    @GetMapping("/allstudentByCourse/{course}")
     public List<Student> findAllStudentByCourse(@PathVariable String course) {
         return service.getStudentsByCourse(course);
     }

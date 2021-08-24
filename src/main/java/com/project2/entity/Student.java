@@ -1,6 +1,7 @@
 package com.project2.entity;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -36,4 +37,5 @@ public class Student {
 	private String pass;
 	private String course;
 	private String url;
+	private Date urlDate;
 }

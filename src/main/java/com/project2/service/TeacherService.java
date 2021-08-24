@@ -51,7 +51,8 @@ public class TeacherService {
         existingTeacher.setEmail(teacher.getEmail());
         existingTeacher.setPhno(teacher.getPhno());
         existingTeacher.setCourse(teacher.getCourse());
-        
+        existingTeacher.setUrl(teacher.getUrl());
+        existingTeacher.setUrlDate(teacher.getUrlDate());
 
         return repository.save(existingTeacher);
     }
